@@ -75,17 +75,17 @@ link: about
 
 					{% elif langEN  %}
 
-					{% for i in arrs.personEN %}
+					{% for i in arrs.personUA %}
 					<li class="person__item">
 						<div class="person__photo"><a href="{{i.site}}"><img src="{{i.photo}}" alt="" class="person__image"></a></div>
 						<div class="person__whois">
-							<div class="person__name"><a class="person__name-link" href="{{i.link}}.html">{{i.name}}</a></div>
+							<h4 class="person__name"><a class="person__name-link" href="{{i.link}}.html">{{i.name}}</a></h4>
 							<div class="person__info">{{i.bigboss}}</div>
 							<div class="person__info">{{i.position}}</div>
 							<div class="person__info">{{i.degree}}</div>
 							<div class="person__info">{{i.room}}</div>
 							<div class="person__mail"><a class="person__mail-link" href="mailto: {{i.email}}">Надіслати E-mail</a></div>
-							<div class="person__site"><a class="person__site-link" href="{{i.site}}">{{i.site}}</a></div>
+							<!-- <div class="person__site"><a class="person__site-link" href="{{i.site}}">Більше інформації...</a></div> -->
 						</div>
 					</li>
 					{% endfor %}
