@@ -1,0 +1,21 @@
+.breadcrumbs
+	margin-bottom: 10px
+	&__list
+		display: flex
+	&__item
+		margin-right: 10px
+		&:after
+			content: ' < '
+			font-size: 16px
+			font-weight: 600
+			padding: 5px
+			color: $supared
+		&:last-child:after
+			content: none
+	&__link
+		font-size: 16px
+		font-weight: 600
+		color: $supared
+		text-decoration: none
+		+h
+			text-decoration: underline

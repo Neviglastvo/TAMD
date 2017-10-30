@@ -1,0 +1,104 @@
+---
+title: Про кафедру
+link: about
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<!-- begin content -->
+<div class="content">
+	<div class="content__container">
+
+		<!-- begin content__left -->
+
+		<div class="content__center">
+			<h2 class="content__name">{{contentTitle1}}</h2>
+
+			<section class="map" id="google-map">
+				<div class="map__container" id="google-container"></div>
+				<div class="map__zoom-in" id="zoom-in"></div>
+				<div class="map__zoom-out" id="zoom-out"></div>
+			{% if langUA %}
+				<address class="map__adress">пр. Глушкова, 4е</address>
+			{% elif langEN  %}
+				<address class="map__adress">Glushkov Avenue 4e</address>
+			{% endif %}
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhRzJmDU59B6_lQDN9zteu6UuHK-ZbYNQ"></script>
+			</section>
+
+
+
+
+
+			{% if langUA %}
+			<h3 class="adress">Адреса: {{adress}}</h3>
+			<h3 class="adress">Телефон: {{phone}}</h3>
+			<h3 class="adress">Телефон лабораторії: {{phoneLab}}</h3>
+			<h3 class="adress"><a href="dtm@univ.kiev.ua" class="adress__link">E-mail: {{mail}}</a><br></h3>
+			<h3 class="adress"><a href="http://tamd.univ.kiev.ua/" class="adress__link">Сайт: {{site}}</a></h3>
+			{% elif langEN  %}
+			<h3 class="adress">Adress: {{adress}}</h3>
+			<h3 class="adress">Phone: {{phone}}</h3>
+			<h3 class="adress">Laboratory Phone: {{phoneLab}}</h3>
+			<h3 class="adress"><a href="dtm@univ.kiev.ua" class="adress__link">E-mail: {{mail}}</a><br></h3>
+			<h3 class="adress"><a href="http://tamd.univ.kiev.ua/" class="adress__link">Site: {{site}}</a></h3>
+			{% endif %}
+</div>
+		<!-- end content__left -->
+		<!-- begin content__right -->
+
+		<div class="content__center">
+
+			<h2 class="content__name">{{contentTitle}}</h2>
+
+			<div class="person">
+				<ul class="person__list">
+
+					{% if langUA %}
+
+					{% for i in arrs.personUA %}
+					<li class="person__item">
+						<div class="person__photo"><a href="{{i.site}}"><img src="{{i.photo}}" alt="" class="person__image"></a></div>
+						<div class="person__whois">
+							<h4 class="person__name"><a class="person__name-link" href="{{i.link}}.html">{{i.name}}</a></h4>
+							<div class="person__info">{{i.bigboss}}</div>
+							<div class="person__info">{{i.position}}</div>
+							<div class="person__info">{{i.degree}}</div>
+							<div class="person__info">{{i.room}}</div>
+							<div class="person__mail"><a class="person__mail-link" href="mailto: {{i.email}}">Надіслати E-mail</a></div>
+							<!-- <div class="person__site"><a class="person__site-link" href="{{i.site}}">Більше інформації...</a></div> -->
+						</div>
+					</li>
+					{% endfor %}
+
+					{% elif langEN  %}
+
+					{% for i in arrs.personEN %}
+					<li class="person__item">
+						<div class="person__photo"><a href="{{i.site}}"><img src="{{i.photo}}" alt="" class="person__image"></a></div>
+						<div class="person__whois">
+							<div class="person__name"><a class="person__name-link" href="{{i.link}}.html">{{i.name}}</a></div>
+							<div class="person__info">{{i.bigboss}}</div>
+							<div class="person__info">{{i.position}}</div>
+							<div class="person__info">{{i.degree}}</div>
+							<div class="person__info">{{i.room}}</div>
+							<div class="person__mail"><a class="person__mail-link" href="mailto: {{i.email}}">Надіслати E-mail</a></div>
+							<div class="person__site"><a class="person__site-link" href="{{i.site}}">{{i.site}}</a></div>
+						</div>
+					</li>
+					{% endfor %}
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+		<!-- end content__right -->
+
+	</div>
+</div>
+<!-- end content -->
+
+
+
+{% endblock %}

@@ -1,0 +1,153 @@
+---
+name: Борисейко Олександр Віталійович
+link: bov
+linkPrev: about
+namePrev: Про кафедру
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<!-- begin content -->
+<div class="content">
+  <div class="content__container">
+    <div class="content__center">
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="{{linkPrev}}.html" class="breadcrumbs__link">{{namePrev}}</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">{{name}}</a></li>
+        </ul>
+      </div>
+
+      <div class="person">
+        <ul class="person__list">
+
+          {% if langUA %}
+
+          <li class="person__item">
+            <div class="person__photo"><img src="../img/person/{{link}}.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">кандидат фізико-математичних наук</p>
+              <p class="person__info">доцент </p>
+              <p class="person__info">Кімната:  405</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">Email: b12313@ukr.net</a><br>
+              </div>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info"> 1990   механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка, диплом з відзнакою </p>
+              <p class="person__info"> 1996 кандидат фізико-математичних наук, захистив у інституті механіки ім. С.П.Тимошенко</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1990-1996 інженер та старший інженер, інститут механіки С.П. Тимошенка</p>
+              <p class="person__info">1996-2000 асистент, кафедра вищої математики, Національний університет харчових технологій </p>
+              <p class="person__info">2000-2001   докторант, Київський національний університет ім. Тараса Шевченка </p>
+              <p class="person__info">2001-дотепер  доцент, кафедра теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка </p>
+
+              <h5 class="person__capt">Основний напрямок наукової діяльності:</h5>
+              <p class="person__info">дослідження у галузі електропружності. Автор понад 40 наукових та науково-методичних праць </p>
+
+              <h5 class="person__capt">Тема кандидатської дисертації:</h5>
+              <p class="person__info">Стійкість циліндричних та конічних оболонок з композитів з непружними елементами         </p>
+
+              <h5 class="person__capt">Викладає нормативні курси:</h5>
+              <p class="person__info">Теоретична механіка </p>
+              <p class="person__info">Варіаційне числення</p>
+              <p class="person__info">Теорія оптимального керування </p>
+
+
+              <h5 class="person__capt">Викладає спеціальні курси:</h5>
+              <p class="person__info">Лінійні задачі в теорії оптимального керування                                                                                          </p>
+
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">1.  Семенюк Н. П., Бабич И. Ю., Борисейко. А. В.  Об устойчивости ко-нических оболочек из металлокомпозитов за пределом упругости. – Механика компози-тов (Рига) 2001. – Т. 37,  №1. – С. 101 – 110.</p>
+              <p class="person__info">2.  Механика композитов: В 12-ти т./ под общ. ред. А. Н. Гузя. Т.12. Устойчивость элементов конструкций. – Київ, ТОВ  "А. С. К." 2001, 375 с.</p>
+              <p class="person__info">3.  Андрущенко В. О.,  Бендюг В. В., Борисейко О. В., Кононіченко М. В., Улітко І. А. Дослідження ефективності перетворення енергії у п’єзоелементах з розрізними електродами. – Вiсник Київського університету.- Сер.: фіз.-мат. науки. 2013.- Вип. 3.- C. 63–65.</p>
+              <p class="person__info">4.  Андрущенко В. О., Борисейко О. В., Улітко І. А., Яцків С. Ю. Спектр резонансних частот біморфних п’єзоелементів. – Вiсник Київського університету.- Сер.: фіз.-мат. науки. 2013.- Вип. 3. – С. 66–68.</p>
+
+              <h5 class="person__capt">Навчальний посібник:</h5>
+              <p class="person__info">         Улітко А. Ф., Борисейко О. В., Улітко І. А. Прикладні методи в задачах електропружності. К., 2007. </p>
+
+            </div>
+          </li>
+
+          {% elif langEN  %}
+
+          <li class="person__item">
+            <p class="person__capt">No English translation. Sorry about that.</p>
+            <p class="person__capt">¯\_(ツ)_/¯</p>
+
+            <div class="person__photo"><img src="../img/person/{{link}}.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">кандидат фізико-математичних наук</p>
+              <p class="person__info">доцент </p>
+              <p class="person__info">Кімната:  405</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">Email: b12313@ukr.net</a><br>
+              </div>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info"> 1990   механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка, диплом з відзнакою </p>
+              <p class="person__info"> 1996 кандидат фізико-математичних наук, захистив у інституті механіки ім. С.П.Тимошенко</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1990-1996 інженер та старший інженер, інститут механіки С.П. Тимошенка</p>
+              <p class="person__info">1996-2000 асистент, кафедра вищої математики, Національний університет харчових технологій </p>
+              <p class="person__info">2000-2001   докторант, Київський національний університет ім. Тараса Шевченка </p>
+              <p class="person__info">2001-дотепер  доцент, кафедра теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка </p>
+
+              <h5 class="person__capt">Основний напрямок наукової діяльності:</h5>
+              <p class="person__info">дослідження у галузі електропружності. Автор понад 40 наукових та науково-методичних праць </p>
+
+              <h5 class="person__capt">Тема кандидатської дисертації:</h5>
+              <p class="person__info">Стійкість циліндричних та конічних оболонок з композитів з непружними елементами         </p>
+
+              <h5 class="person__capt">Викладає нормативні курси:</h5>
+              <p class="person__info">Теоретична механіка </p>
+              <p class="person__info">Варіаційне числення</p>
+              <p class="person__info">Теорія оптимального керування </p>
+
+
+              <h5 class="person__capt">Викладає спеціальні курси:</h5>
+              <p class="person__info">Лінійні задачі в теорії оптимального керування                                                                                          </p>
+
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">1.  Семенюк Н. П., Бабич И. Ю., Борисейко. А. В.  Об устойчивости ко-нических оболочек из металлокомпозитов за пределом упругости. – Механика компози-тов (Рига) 2001. – Т. 37,  №1. – С. 101 – 110.</p>
+              <p class="person__info">2.  Механика композитов: В 12-ти т./ под общ. ред. А. Н. Гузя. Т.12. Устойчивость элементов конструкций. – Київ, ТОВ  "А. С. К." 2001, 375 с.</p>
+              <p class="person__info">3.  Андрущенко В. О.,  Бендюг В. В., Борисейко О. В., Кононіченко М. В., Улітко І. А. Дослідження ефективності перетворення енергії у п’єзоелементах з розрізними електродами. – Вiсник Київського університету.- Сер.: фіз.-мат. науки. 2013.- Вип. 3.- C. 63–65.</p>
+              <p class="person__info">4.  Андрущенко В. О., Борисейко О. В., Улітко І. А., Яцків С. Ю. Спектр резонансних частот біморфних п’єзоелементів. – Вiсник Київського університету.- Сер.: фіз.-мат. науки. 2013.- Вип. 3. – С. 66–68.</p>
+
+              <h5 class="person__capt">Навчальний посібник:</h5>
+              <p class="person__info">         Улітко А. Ф., Борисейко О. В., Улітко І. А. Прикладні методи в задачах електропружності. К., 2007. </p>
+
+            </div>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- end content -->
+
+
+
+
+{% endblock %}

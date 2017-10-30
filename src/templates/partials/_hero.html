@@ -1,0 +1,38 @@
+
+<!-- begin hero -->
+<div class="hero">
+	<div class="hero__container">
+
+
+		<!-- begin nav -->
+		<nav class="nav">
+			<div class="nav__container">
+				<ul class="nav__list">
+					{% if langUA %}
+					{% for i in arrs.navigationUA %}
+					<li class="nav__item"><a href="{{i.link}}.html" class="nav__link">{{i.title}}</a></li>
+					{% endfor %}
+					<a href="{{pagelink}}.html" class="lang lang__to-en"></a>
+					{% elif langEN  %}
+					{% for i in arrs.navigationEN %}
+					<li class="nav__item"><a href="{{i.link}}.html" class="nav__link">{{i.title}}</a></li>
+					{% endfor %}
+					<a href="{{pagelink}}.html" class="lang lang__to-ua"></a>
+					{% endif %}
+				</ul>
+			</div>
+		</nav>
+		<!-- end nav -->
+
+		<!-- begin carousel -->
+		<div class="carousel">
+			<div class="carousel__container js-slider">
+				{% for i in arrs.carousel %}
+				<div class="carousel__item"><img class="carousel__img" src="{{i.image}}" alt=""></div>
+				{% endfor %}
+			</div>
+		</div>
+		<!-- end carousel -->
+	</div>
+</div>
+<!-- end hero -->

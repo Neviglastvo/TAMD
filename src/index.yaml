@@ -1,0 +1,8 @@
+ProjectTitle: tamd
+
+PageList:
+
+- file: /ua/main.html
+  ready: 0.001%
+- file: /en/main.html
+  ready: 0.001%

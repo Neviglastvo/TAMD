@@ -1,0 +1,151 @@
+---
+name: Курилко Олександр Борисович
+link: kob
+linkPrev: about
+namePrev: Про кафедру
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<!-- begin content -->
+<div class="content">
+  <div class="content__container">
+    <div class="content__center">
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="{{linkPrev}}.html" class="breadcrumbs__link">{{namePrev}}</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">{{name}}</a></li>
+        </ul>
+      </div>
+
+      <div class="person">
+        <ul class="person__list">
+
+          {% if langUA %}
+
+          <li class="person__item">
+            <div class="person__photo"><img src="../img/person/{{link}}.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">кандидат фізико-математичних наук</p>
+              <p class="person__info">доцент </p>
+              <p class="person__info">Кімната:  405</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">Email: alexandr.kurylko@gmail.com</a><br>
+              </div>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info"> 2008   механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка, диплом з відзнакою </p>
+              <p class="person__info"> 2012 кандидат фізико-математичних наук, механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1990-1996 інженер та старший інженер, інститут механіки С.П. Тимошенка</p>
+              <p class="person__info">1996-2000 асистент, кафедра вищої математики, Національний університет харчових технологій </p>
+              <p class="person__info">2000-2001   докторант, Київський національний університет ім. Тараса Шевченка </p>
+              <p class="person__info">2001-дотепер  доцент, кафедра теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка </p>
+
+              <h5 class="person__capt">Напрямки наукової діяльності: </h5>
+              <p class="person__info">гідродинаміка</p>
+              <p class="person__info">топологічний хаос в динамічних системах</p>
+              <p class="person__info">перемішування в'язких рідин</p>
+              <p class="person__info">Автор 15 наукових та науково-методичних праць </p>
+
+              <h5 class="person__capt">Тема кандидатської дисертації:</h5>
+              <p class="person__info">Змішування в’язких рідин в мікрокомірках         </p>
+
+              <h5 class="person__capt">Викладає нормативні курси:</h5>
+              <p class="person__info">Теоретична механіка </p>
+              <p class="person__info">Чисельні методи в задачах механіки</p>
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">     1.     Мелешко В.В., Курилко О.Б., Гуржій О.А. Породження топологічного хаосу в течії Стокса в прямокутній порожнині / Математичні методи і фізико-механічні поля. – 2011. – Том 54, №3. – С. 87-98.</p>
+              <p class="person__info">     2.     Курилко О.Б., Гуржій О.А. Топологічне змішування в'язких рідин в прямо-кутній порожнині / Вісник КНУ ім. Тараса Шевченка, – Сер.: фіз.-мат. нау¬ки. – 2011. – Вип. №4. – С.83-86.</p>
+              <p class="person__info">     3.     Курилко О.Б. Аналіз процесу перемішування в’язкої рідини всередині прямокутної порожнини / Вісник Київського національного університету імені Тараса Шевченка. - 2015. - Вип. 2(34). - С. 48-54.</p>
+
+              <h5 class="person__capt">Навчальний посібник:</h5>
+              <p class="person__info">         СТАТИКА. Методичні вказівки до проведення практичних занять. Кафедра Теоретичної та прикладної механіки механіко-математичного факультету Київського національного університету імені Тараса Шевченка. Укл. О.В. БОРИСЕЙКО, О.Б. КУРИЛКО, І.В. ЛЕБЕДЄВА. Київ 2015. Електронна версія. 62 стор.</p>
+
+              <h5 class="person__capt">Додатково:</h5>
+              <p class="person__info">  Член асоціації більярдного спорту Київського національного університету імені Тараса Шевченка. </p>
+
+            </div>
+          </li>
+
+          {% elif langEN  %}
+
+          <li class="person__item">
+            <p class="person__capt">No English translation. Sorry about that.</p>
+            <p class="person__capt">¯\_(ツ)_/¯</p>
+
+            <div class="person__photo"><img src="../img/person/{{link}}.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">кандидат фізико-математичних наук</p>
+              <p class="person__info">доцент </p>
+              <p class="person__info">Кімната:  405</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">Email: alexandr.kurylko@gmail.com</a><br>
+              </div>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info"> 2008   механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка, диплом з відзнакою </p>
+              <p class="person__info"> 2012 кандидат фізико-математичних наук, механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1990-1996 інженер та старший інженер, інститут механіки С.П. Тимошенка</p>
+              <p class="person__info">1996-2000 асистент, кафедра вищої математики, Національний університет харчових технологій </p>
+              <p class="person__info">2000-2001   докторант, Київський національний університет ім. Тараса Шевченка </p>
+              <p class="person__info">2001-дотепер  доцент, кафедра теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка </p>
+
+              <h5 class="person__capt">Напрямки наукової діяльності: </h5>
+              <p class="person__info">гідродинаміка</p>
+              <p class="person__info">топологічний хаос в динамічних системах</p>
+              <p class="person__info">перемішування в'язких рідин</p>
+              <p class="person__info">Автор 15 наукових та науково-методичних праць </p>
+
+              <h5 class="person__capt">Тема кандидатської дисертації:</h5>
+              <p class="person__info">Змішування в’язких рідин в мікрокомірках         </p>
+
+              <h5 class="person__capt">Викладає нормативні курси:</h5>
+              <p class="person__info">Теоретична механіка </p>
+              <p class="person__info">Чисельні методи в задачах механіки</p>
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">     1.     Мелешко В.В., Курилко О.Б., Гуржій О.А. Породження топологічного хаосу в течії Стокса в прямокутній порожнині / Математичні методи і фізико-механічні поля. – 2011. – Том 54, №3. – С. 87-98.</p>
+              <p class="person__info">     2.     Курилко О.Б., Гуржій О.А. Топологічне змішування в'язких рідин в прямо-кутній порожнині / Вісник КНУ ім. Тараса Шевченка, – Сер.: фіз.-мат. нау¬ки. – 2011. – Вип. №4. – С.83-86.</p>
+              <p class="person__info">     3.     Курилко О.Б. Аналіз процесу перемішування в’язкої рідини всередині прямокутної порожнини / Вісник Київського національного університету імені Тараса Шевченка. - 2015. - Вип. 2(34). - С. 48-54.</p>
+
+              <h5 class="person__capt">Навчальний посібник:</h5>
+              <p class="person__info">         СТАТИКА. Методичні вказівки до проведення практичних занять. Кафедра Теоретичної та прикладної механіки механіко-математичного факультету Київського національного університету імені Тараса Шевченка. Укл. О.В. БОРИСЕЙКО, О.Б. КУРИЛКО, І.В. ЛЕБЕДЄВА. Київ 2015. Електронна версія. 62 стор.</p>
+
+              <h5 class="person__capt">Додатково:</h5>
+              <p class="person__info">  Член асоціації більярдного спорту Київського національного університету імені Тараса Шевченка. </p>
+
+            </div>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- end content -->
+
+
+
+
+{% endblock %}

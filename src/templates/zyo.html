@@ -1,0 +1,203 @@
+---
+name: Жук Ярослав Олександрович
+link: zyo
+linkPrev: about
+namePrev: Про кафедру
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<!-- begin content -->
+<div class="content">
+  <div class="content__container">
+    <div class="content__center">
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="{{linkPrev}}.html" class="breadcrumbs__link">{{namePrev}}</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">{{name}}</a></li>
+        </ul>
+      </div>
+
+      <div class="person">
+        <ul class="person__list">
+
+          {% if langUA %}
+
+          <li class="person__item">
+            <div class="person__photo"><img src="../img/person/ZYO.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">Доктор фізико-математичних наук</p>
+              <p class="person__info">Професор </p>
+              <p class="person__info">Завідувач Кафедри Теоретичної та Прикладної Механіки</p>
+              <p class="person__info">Кімната:  234</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">E-mail: y.zhuk@i.ua</a><br>
+                <a class="person__mail-link" href="mailto: y_zhuk@inmech.kiev.ua">E-mail: y_zhuk@inmech.kiev.ua</a>
+              </div>
+              <p class="person__info">Телeфон: +380-44-521-33-34</p>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info">1991  диплом з відзнакою, механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка</p>
+              <p class="person__info">1994  кандидат фізико-математичних наук, Інститут механіки ім. С. П. Тимошенко</p>
+              <p class="person__info">2002  доктор фізико-математичних наук, Інститут механіки ім. С. П. Тимошенко</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1994-2003   інженер, науковий співробітник, Інститут механіки ім. С. П. Тимошенко </p>
+              <p class="person__info">2003-2012 старший науковий співробітник, Інститут механіки ім. С. П. Тимошенко</p>
+              <p class="person__info">2004-2012 доцент, Інститут механіки ім. С. П. Тимошенко</p>
+              <p class="person__info">2012-дотепер  професор, кафедра теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка</p>
+              <p class="person__info">2013-дотепер  завідувач кафедри теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка</p>
+
+              <h5 class="person__capt">Професійна активність:</h5>
+              <p class="person__info">член Національного комітету України з теоретичної і прикладної механіки (з 2002) </p>
+              <p class="person__info">секретар Експертної ради з механіки ВАК України (2005–2006, 2007–2008, 2009–2010)</p>
+              <p class="person__info">експерт Експертної ради з математики і механіки ДАК МОН України (2011–2012)</p>
+              <p class="person__info">голова спеціалізованої вченої ради К 26.001.21 по захисту кандидатських дисертацій на здобуття вченого ступеня кандидата фізико-математичних наук по спеціальностях 01.02.04 – механіка твердого деформівного тіла, 01.02.05 – механіка рідини, газу і плазми</p>
+              <p class="person__info">експерт Науково-технічної ради з механіки МОН (з 2015)</p>
+              <p class="person__info">член редколегій журналів: «Вісник Київського національного університету імені Тараса Шевченка. Серія фізико-математичні науки»; «Вісник Київського національного університету імені Тараса Шевченка. Математика. Механіка»; «Дослідження в математиці і механіці»</p>
+
+              <h5 class="person__capt">Напрямки наукової діяльності: </h5>
+              <p class="person__info">механіка зв’язаних полів у матеріалах і елементах конструкцій</p>
+              <p class="person__info">зв’язані задачі термомеханіки фізично нелінійних матеріалів при гармонічному навантаженні</p>
+              <p class="person__info">зв’язані задачі термоелектромеханіки фізично нелінійних матеріалів</p>
+              <p class="person__info">механіка композиційних матеріалів</p>
+              <p class="person__info">нано- і мікромеханіка</p>
+
+
+              <h5 class="person__capt">Працював за грантами:</h5>
+              <p class="person__info">Grant of American Physical Society (1993) </p>
+              <p class="person__info">Грант Міжнародної асоціації академій наук (СНД) (1996)</p>
+              <p class="person__info">Royal Society/NATO Research Fellowship (1999–2000)</p>
+              <p class="person__info">Royal Society FSU-UK Joint Project Grant (2004)</p>
+              <p class="person__info">Royal Society of Edinborgh Visiting Grant (2006)</p>
+              <p class="person__info">Engineering and Physical Sciences Research Council Grant (2008–2010 – University of Aberdeen, Scotland, UK)</p>
+
+
+              <h5 class="person__capt">Викладає спеціалізовані курси:</h5>
+              <p class="person__info"><span>3 курс бакалаврату </span> Історія механіки                  </p>
+              <p class="person__info"><span>4 курс бакалаврату </span> Коливальні системи                </p>
+              <p class="person__info"><span>1 курс магістратури</span> Теорія розмірностей               </p>
+              <p class="person__info"><span>1 курс магістратури</span> Динамічні задачі механіки         </p>
+              <p class="person__info"><span>2 курс магістратури</span> Хаотична та нелінійна механіка    </p>
+              <p class="person__info"><span>2 курс аспірантури </span> Математичні моделі механіки       </p>
+
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">1.  Сенченков И. К., Жук Я. А., Карнаухов В. Г. Моделирование термомеханического поведения физически нелинейных материалов при моногармоническом приближении / В кн.: Успехи механики: В 6-ти томах / Под ред. А. Н. Гузя. Том 5.– К.: Літера ЛТД, 2009. – 752 с. – C. 432–462.</p>
+              <p class="person__info">2.  Zhuk A. P., Kubenko V. D., Zhuk Y. A. Acoustic radiation force on a spherical particle in a fluid-filledcavity // J. Acoust. Soc. Am. (JASA). – 2012. –Vol. 132, No. 4. – P. 2189–2197.</p>
+              <p class="person__info">3.  Zhuk Y. A., Guz I. A. Dissipative Heating of Thin-Wall Structures Containing Piezoactive Layers. In Hetnarski R.B. (Ed.) Encyclopedia of Thermal Stresses, Vol D, pp 971–985. Springer Dordrecht, Heidelberg, NewYork, London. – 2014.</p>
+
+
+              <h5 class="person__capt">Навчальні посібники:</h5>
+              <p class="person__info">1.  Розмірність. Подібність. Автомодельність: навчальний посібник / Будак В.Д., Жук Я. О.– Миколаїв: Іліон, 2013. – 188с.</p>
+              <p class="person__info">2.  Механіка суцільних середовищ: навчальний посібник / Будак В. Д., Жук Я. О.– Миколаїв: Іліон, 2011. – 160с.</p>
+              <p class="person__info">3.  Загальна фізика. Механіка.: Навчально-методичний посібник / Шпак А. П., Жук Я. О.– Київ: НАУ, 2005. – 84 с.</p>
+
+            </div>
+          </li>
+
+          {% elif langEN  %}
+
+          <li class="person__item">
+            <p class="person__capt">No English translation. Sorry about that.</p>
+            <p class="person__capt">¯\_(ツ)_/¯</p>
+
+            <div class="person__photo"><img src="../img/person/ZYO.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">Доктор фізико-математичних наук</p>
+              <p class="person__info">Професор </p>
+              <p class="person__info">Завідувач Кафедри Теоретичної та Прикладної Механіки</p>
+              <p class="person__info">Кімната:  234</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">E-mail: y.zhuk@i.ua</a><br>
+                <a class="person__mail-link" href="mailto: y_zhuk@inmech.kiev.ua">E-mail: y_zhuk@inmech.kiev.ua</a>
+              </div>
+              <p class="person__info">Телeфон: +380-44-521-33-34</p>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info">1991  диплом з відзнакою, механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка</p>
+              <p class="person__info">1994  кандидат фізико-математичних наук, Інститут механіки ім. С. П. Тимошенко</p>
+              <p class="person__info">2002  доктор фізико-математичних наук, Інститут механіки ім. С. П. Тимошенко</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1994-2003   інженер, науковий співробітник, Інститут механіки ім. С. П. Тимошенко </p>
+              <p class="person__info">2003-2012 старший науковий співробітник, Інститут механіки ім. С. П. Тимошенко</p>
+              <p class="person__info">2004-2012 доцент, Інститут механіки ім. С. П. Тимошенко</p>
+              <p class="person__info">2012-дотепер  професор, кафедра теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка</p>
+              <p class="person__info">2013-дотепер  завідувач кафедри теоретичної та прикладної механіки, Київський національний університет ім. Тараса Шевченка</p>
+
+              <h5 class="person__capt">Професійна активність:</h5>
+              <p class="person__info">член Національного комітету України з теоретичної і прикладної механіки (з 2002) </p>
+              <p class="person__info">секретар Експертної ради з механіки ВАК України (2005–2006, 2007–2008, 2009–2010)</p>
+              <p class="person__info">експерт Експертної ради з математики і механіки ДАК МОН України (2011–2012)</p>
+              <p class="person__info">голова спеціалізованої вченої ради К 26.001.21 по захисту кандидатських дисертацій на здобуття вченого ступеня кандидата фізико-математичних наук по спеціальностях 01.02.04 – механіка твердого деформівного тіла, 01.02.05 – механіка рідини, газу і плазми</p>
+              <p class="person__info">експерт Науково-технічної ради з механіки МОН (з 2015)</p>
+              <p class="person__info">член редколегій журналів: «Вісник Київського національного університету імені Тараса Шевченка. Серія фізико-математичні науки»; «Вісник Київського національного університету імені Тараса Шевченка. Математика. Механіка»; «Дослідження в математиці і механіці»</p>
+
+              <h5 class="person__capt">Напрямки наукової діяльності: </h5>
+              <p class="person__info">механіка зв’язаних полів у матеріалах і елементах конструкцій</p>
+              <p class="person__info">зв’язані задачі термомеханіки фізично нелінійних матеріалів при гармонічному навантаженні</p>
+              <p class="person__info">зв’язані задачі термоелектромеханіки фізично нелінійних матеріалів</p>
+              <p class="person__info">механіка композиційних матеріалів</p>
+              <p class="person__info">нано- і мікромеханіка</p>
+
+
+              <h5 class="person__capt">Працював за грантами:</h5>
+              <p class="person__info">Grant of American Physical Society (1993) </p>
+              <p class="person__info">Грант Міжнародної асоціації академій наук (СНД) (1996)</p>
+              <p class="person__info">Royal Society/NATO Research Fellowship (1999–2000)</p>
+              <p class="person__info">Royal Society FSU-UK Joint Project Grant (2004)</p>
+              <p class="person__info">Royal Society of Edinborgh Visiting Grant (2006)</p>
+              <p class="person__info">Engineering and Physical Sciences Research Council Grant (2008–2010 – University of Aberdeen, Scotland, UK)</p>
+
+
+              <h5 class="person__capt">Викладає спеціалізовані курси:</h5>
+              <p class="person__info"><span>3 курс бакалаврату </span> Історія механіки                  </p>
+              <p class="person__info"><span>4 курс бакалаврату </span> Коливальні системи                </p>
+              <p class="person__info"><span>1 курс магістратури</span> Теорія розмірностей               </p>
+              <p class="person__info"><span>1 курс магістратури</span> Динамічні задачі механіки         </p>
+              <p class="person__info"><span>2 курс магістратури</span> Хаотична та нелінійна механіка    </p>
+              <p class="person__info"><span>2 курс аспірантури </span> Математичні моделі механіки       </p>
+
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">1.  Сенченков И. К., Жук Я. А., Карнаухов В. Г. Моделирование термомеханического поведения физически нелинейных материалов при моногармоническом приближении / В кн.: Успехи механики: В 6-ти томах / Под ред. А. Н. Гузя. Том 5.– К.: Літера ЛТД, 2009. – 752 с. – C. 432–462.</p>
+              <p class="person__info">2.  Zhuk A. P., Kubenko V. D., Zhuk Y. A. Acoustic radiation force on a spherical particle in a fluid-filledcavity // J. Acoust. Soc. Am. (JASA). – 2012. –Vol. 132, No. 4. – P. 2189–2197.</p>
+              <p class="person__info">3.  Zhuk Y. A., Guz I. A. Dissipative Heating of Thin-Wall Structures Containing Piezoactive Layers. In Hetnarski R.B. (Ed.) Encyclopedia of Thermal Stresses, Vol D, pp 971–985. Springer Dordrecht, Heidelberg, NewYork, London. – 2014.</p>
+
+
+              <h5 class="person__capt">Навчальні посібники:</h5>
+              <p class="person__info">1.  Розмірність. Подібність. Автомодельність: навчальний посібник / Будак В.Д., Жук Я. О.– Миколаїв: Іліон, 2013. – 188с.</p>
+              <p class="person__info">2.  Механіка суцільних середовищ: навчальний посібник / Будак В. Д., Жук Я. О.– Миколаїв: Іліон, 2011. – 160с.</p>
+              <p class="person__info">3.  Загальна фізика. Механіка.: Навчально-методичний посібник / Шпак А. П., Жук Я. О.– Київ: НАУ, 2005. – 84 с.</p>
+
+            </div>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- end content -->
+
+
+
+
+{% endblock %}

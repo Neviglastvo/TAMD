@@ -1,0 +1,135 @@
+---
+name: Маципура Володимир Тимофійович
+link: mvt
+linkPrev: about
+namePrev: Про кафедру
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+
+<!-- begin content -->
+<div class="content">
+  <div class="content__container">
+    <div class="content__center">
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="{{linkPrev}}.html" class="breadcrumbs__link">{{namePrev}}</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">{{name}}</a></li>
+        </ul>
+      </div>
+
+      <div class="person">
+        <ul class="person__list">
+
+          {% if langUA %}
+
+          <li class="person__item">
+            <div class="person__photo"><img src="../img/person/{{link}}.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">доктор фізико-математичних наук</p>
+              <p class="person__info">професор</p>
+              <p class="person__info">Кімната:  230</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">Email: mnivtt@gmail.com</a><br>
+              </div>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info">1974  електроакустичний факультет, Київський політехнічний інститут </p>
+              <p class="person__info">1985  кандидат фізико-математичних наук, Ленінградський електротехнічний інститут</p>
+              <p class="person__info">2004  доктор фізико-математичних наук, Інститут гідромеханіки НАН України</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1974-2007 асистент, доцент, професор, електроакустичний факультет, Київський політехнічний інститут </p>
+              <p class="person__info">2007-дотепер  професор, кафедра теоретичниї та прикладної механіки, механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка</p>
+
+              <h5 class="person__capt">Напрямки наукової діяльності: </h5>
+              <p class="person__info">поширення пружних хвиль у хвилевідних структурах </p>
+              <p class="person__info">акустичні поля у неканонічних областях</p>
+
+              <h5 class="person__capt">Викладає нормативний курс:</h5>
+              <p class="person__info">Теорія коливань    3 курс бакалаврату </p>
+
+              <h5 class="person__capt">Викладає спеціалізовані курси:</h5>
+              <p class="person__info">Комп'ютерне моделювання поширення пружних хвиль    1 курс магістратури</p>
+              <p class="person__info">Комп'ютерне дослідження полів у хвилеводних структурах   2 курс магістратури</p>
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">1.  Грінченко В. Т., Вовк І. В., Маципура В. Т. Основи акустики. - К.: Науоква думка, 2007. - 640 с. (Навчальний посібник з грифом МОН).</p>
+              <p class="person__info">2.  В.Т. Гринченко, В.Т. Мацыпура, А.А. Снарский. Фракталы: от удивления к рабочему инструменту. – Киев: Наукова думка, 2013. – 270 с. (Учебное пособие с грифом МОН.).</p>
+              <p class="person__info">3.  Мелешко В.В., Маципура В.Т., Улітко І.А. Теорія хвилеводів. – Київ: Видавничо-поліграфічний центр "Київський університет", 2013. – 415 с. (Навчальний посібник с грифом МОН.).</p>
+              <p class="person__info">4.  В.Т. Гринченко, И.В. Вовк, В.Т. Мацыпура. Волновые задачи акустики. – Киев: ИНТЕРСЕРВИС, 2013. – 572 с. Монография. </p>
+
+            </div>
+          </li>
+
+          {% elif langEN  %}
+
+          <li class="person__item">
+            <p class="person__capt">No English translation. Sorry about that.</p>
+            <p class="person__capt">¯\_(ツ)_/¯</p>
+
+            <div class="person__photo"><img src="../img/person/{{link}}.jpg" alt="" class="person__image"></div>
+            <div class="person__whois">
+              <h4 class="person__name"><a class="person__name-link" href="{{link}}.html">{{name}}</a></h4>
+              <p class="person__info">доктор фізико-математичних наук</p>
+              <p class="person__info">професор</p>
+              <p class="person__info">Кімната:  230</p>
+              <div class="person__mail">
+                <a class="person__mail-link" href="mailto: y.zhuk@i.ua">Email: mnivtt@gmail.com</a><br>
+              </div>
+            </div>
+
+            <div class="person__full-info">
+
+              <h5 class="person__capt">Освіта:</h5>
+              <p class="person__info">1974  електроакустичний факультет, Київський політехнічний інститут </p>
+              <p class="person__info">1985  кандидат фізико-математичних наук, Ленінградський електротехнічний інститут</p>
+              <p class="person__info">2004  доктор фізико-математичних наук, Інститут гідромеханіки НАН України</p>
+
+              <h5 class="person__capt">Професійна діяльність:</h5>
+              <p class="person__info">1974-2007 асистент, доцент, професор, електроакустичний факультет, Київський політехнічний інститут </p>
+              <p class="person__info">2007-дотепер  професор, кафедра теоретичниї та прикладної механіки, механіко-математичний факультет, Київський національний університет ім. Тараса Шевченка</p>
+
+              <h5 class="person__capt">Напрямки наукової діяльності: </h5>
+              <p class="person__info">поширення пружних хвиль у хвилевідних структурах </p>
+              <p class="person__info">акустичні поля у неканонічних областях</p>
+
+              <h5 class="person__capt">Викладає нормативний курс:</h5>
+              <p class="person__info">Теорія коливань    3 курс бакалаврату </p>
+
+              <h5 class="person__capt">Викладає спеціалізовані курси:</h5>
+              <p class="person__info">Комп'ютерне моделювання поширення пружних хвиль    1 курс магістратури</p>
+              <p class="person__info">Комп'ютерне дослідження полів у хвилеводних структурах   2 курс магістратури</p>
+              <a class="person__site-link" target="_blank" href="http://lcwf.univ.kiev.ua/index.php?option=com_content&view=article&catid=38:educationalprocess&id=77:2017-03-03-19-48-56">Перейти до робочих програм</a>
+
+              <h5 class="person__capt">Основні публікації:</h5>
+              <p class="person__info">1.  Грінченко В. Т., Вовк І. В., Маципура В. Т. Основи акустики. - К.: Науоква думка, 2007. - 640 с. (Навчальний посібник з грифом МОН).</p>
+              <p class="person__info">2.  В.Т. Гринченко, В.Т. Мацыпура, А.А. Снарский. Фракталы: от удивления к рабочему инструменту. – Киев: Наукова думка, 2013. – 270 с. (Учебное пособие с грифом МОН.).</p>
+              <p class="person__info">3.  Мелешко В.В., Маципура В.Т., Улітко І.А. Теорія хвилеводів. – Київ: Видавничо-поліграфічний центр "Київський університет", 2013. – 415 с. (Навчальний посібник с грифом МОН.).</p>
+              <p class="person__info">4.  В.Т. Гринченко, И.В. Вовк, В.Т. Мацыпура. Волновые задачи акустики. – Киев: ИНТЕРСЕРВИС, 2013. – 572 с. Монография. </p>
+
+            </div>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- end content -->
+
+
+
+
+{% endblock %}

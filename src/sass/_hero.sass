@@ -1,0 +1,186 @@
+.hero
+	width: 100%
+	height: 600px
+	background-color: #eee
+	+r(1000)
+		height: 100%
+	+r(480)
+		display: none
+	&__container
+		position: relative
+
+// $nav-colors: $supared, #5a3972, #6a9b4d, #eda240, #4460a3, $supared
+// @for $i from 1 through length($nav-colors)
+//  li.nav__item:nth-child(#length($nav-colors)n+#$i)
+//    background: nth($nav-colors, $i)
+.nav
+	z-index: 999
+	width: 100%
+	position: absolute
+	top: 35px
+	transition: all 600ms ease
+	&__container
+		transition: all 400ms cubic-bezier(1, -0.515, 0.335, 1.225)
+		max-width: 840px
+		width: 100%
+		margin: auto
+	&__list
+		max-width: 840px
+		width: 100%
+		border-top: 3px solid $supared
+		margin: auto
+		display: flex
+		justify-content: space-between
+	&__item
+		text-align: right
+		display: flex
+		width: 16.7%
+		height: 60px
+	&__link
+		word-wrap: normal
+		width: 100%
+		max-width: 140px
+		min-width: 125px
+		padding: 5px
+		height: 60px
+		background-color: #eee
+		text-decoration: none
+		line-height: 76px
+		color: #000
+		font-size: 18px
+		font-weight: 600
+		transition: all 400ms cubic-bezier(1, -0.515, 0.335, 1.225)
+		&:hover
+			color: $supared
+			height: 110px
+			line-height: 175px
+			transition: all 400ms cubic-bezier(1, -0.515, 0.335, 1.225)
+	&__current
+		background-color: $supared
+		color: #eee
+		height: 110px
+		line-height: 175px
+		&:hover
+			color: #FFF
+	& .lang
+		display: none
+
+
+.nav-fixed
+	z-index: 999999
+	width: 100%
+	position: fixed
+	top: 0
+	&__container
+		box-shadow: 0 0 10px rgba(0,0,0,.6)
+		border-top: 2px solid $supared
+		background: #eee
+		max-width: 100%
+		width: 100%
+		transition: all 400ms cubic-bezier(1, -0.515, 0.335, 1.225)
+		margin: auto
+	&__list
+		border: 0
+		max-width: 1000px
+		width: 100%
+		margin: auto
+		display: flex
+		justify-content: space-between
+	&__item
+		text-align: right
+		display: flex
+		width: 16.666666%
+	&__link
+		width: 100%
+		max-width: auto
+		min-width: 125px
+		padding: 5px
+		height: 30px
+		text-align: center
+		background-color: #eee
+		text-decoration: none
+		line-height: 20px
+		color: #000
+		font-size: 18px
+		font-weight: 600
+		transition: all 400ms cubic-bezier(1, -0.515, 0.335, 1.225)
+		&:hover
+			color: $supared
+			box-shadow: inset 0px 0px 0px 1px $supared
+			transition: all 400ms ease
+	&__current
+		background-color: $supared
+		color: #eee
+		height: 30px
+		line-height: 20px
+		&:hover
+			color: #FFF
+	& .lang
+		width: 54px
+		height: 30px
+
+
+.carousel
+	position: relative
+	height: 600px
+	width: 100%
+	cursor: pointer
+	+r(1000)
+		height: auto
+	&__container
+		margin: 0 auto
+		max-width: 1920px
+		width: 100%
+	&__item
+		z-index: -1
+	&__img
+		width: 100%
+		height: 600px
+		+r(1000)
+			height: auto
+
+.arrow
+	position: absolute
+	font-family: "Cooper Black"
+	cursor: pointer
+	z-index: 1
+	color: #eee
+	opacity: 1
+	font-size: 80px
+	width: 100px
+	top: 0
+	bottom: 0
+	background: rgba(288, 288, 288, 0)
+	transition: all .5s ease
+	+r(1000)
+		display: none
+	&:hover
+		color: $supared
+		text-shadow: #000 1px 1px 5px
+		background: rgba(288, 288, 288, 0.3)
+	&__prev
+		left: 0
+	&__next
+		right: 0
+
+.slick-dots
+	bottom: 120px
+	li
+		button
+			padding: 5px
+			&:before
+				height: 14px
+				width: 14px
+				background: #eee
+				transition: all 0.3s ease
+			&:hover
+				&:before
+					background: $supared
+		&.slick-active button:before
+				background: $supared
+
+
+
+
+
+
