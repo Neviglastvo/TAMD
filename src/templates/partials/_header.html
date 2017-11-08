@@ -1,24 +1,20 @@
 <!-- begin header -->
 <div class="header">
-		<div class="infobar">
-	<div class="infobar__container">
-
-					{% if langUA %}
+	<div class="infobar">
+		<div class="infobar__container">
+			{% if langUA %}
 			<div class="infobar__item">+38 044 259 03 07</div>
 			<div class="infobar__item"><a href="dtm@univ.kiev.ua" class="infobar__email">dtm@univ.kiev.ua</a></div>
 			<div class="infobar__item">пр. Глушкова, 4е</div>
 			<a href="{{pagelink}}.html" class="lang lang__to-en"></a>
-
-					{% elif langEN  %}
+			{% elif langEN  %}
 			<div class="infobar__item">+38 044 259 03 07</div>
 			<div class="infobar__item"><a href="dtm@univ.kiev.ua" class="infobar__email">dtm@univ.kiev.ua</a></div>
 			<div class="infobar__item">пр. Глушкова, 4е</div>
 			<a href="{{pagelink}}.html" class="lang lang__to-ua"></a>
-					{% endif %}
-
-
+			{% endif %}
 		</div>
-		</div>
+	</div>
 	<div class="header__container">
 		<a href="http://www.univ.kiev.ua" class="logo__link"><div class="logo logo__left"><img src="../img/logo/logo1.png" alt="" class="logo_image"></div></a>
 		<div class="header__title">
@@ -34,4 +30,25 @@
 			<a href="main.html" class="logo__link logo__link-right"><div class="logo logo__left"><img src="../img/logo/logo2.png" alt="" class="logo_image"></div></a>
 		</div>
 	</div>
-<!-- end header -->
+	<!-- end header -->
+
+
+		<!-- begin hamburger -->
+		<button class="hamburger hamburger--emphatic" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<div class="toggle">
+			<div class="logo__wrapper">
+				<div class="logo">
+					<a href="#" class="logo__link">dsa<span class="logo__span">dsa</span></a>
+				</div>
+			</div>
+			<div class="toggle__wrapper">
+				<ul class="toggle__list">
+					<li class="toggle__item"><a href="#" class="toggle__link">qwe</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end hamburger -->

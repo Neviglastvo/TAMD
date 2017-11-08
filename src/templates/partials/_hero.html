@@ -26,13 +26,33 @@
 
 		<!-- begin carousel -->
 		<div class="carousel">
-			<div class="carousel__container js-slider">
-				{% for i in arrs.carousel %}
-				<div class="carousel__item"><img class="carousel__img" src="{{i.image}}" alt=""></div>
-				{% endfor %}
+
+			<div class="carousel-content">
+
+				<div class="carousel-content__logo">
+					<div class="carousel-content__logo1"></div>
+					<div class="carousel-content__logo2"></div>
+				</div>
+
+				<div class="carousel-content__title">
+					<a href="main.html" class="carousel-content__title-link">{{siteTitle}}<br>
+						{% if langUA %}
+						<span class="carousel-content__span carousel-content__title-span">{{siteTitleSpan}} <nobr>{{siteTitleSpanName}}</nobr></span></a>
+						{% elif langEN  %}
+						<span class="carousel-content__span carousel-content__title-span"><nobr>{{siteTitleSpanName}}</nobr> {{siteTitleSpan}}</span></a>
+						{% endif %}
+					</div>
+				</div>
+
+				<div class="carousel__container js-slider">
+					{% for i in arrs.carousel %}
+					<div class="carousel__item">
+						<img class="carousel__img" src="{{i.image}}" alt="">
+					</div>
+					{% endfor %}
+				</div>
 			</div>
+			<!-- end carousel -->
 		</div>
-		<!-- end carousel -->
 	</div>
-</div>
 <!-- end hero -->

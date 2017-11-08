@@ -13,10 +13,14 @@
 			border: 2px solid $supared
 		&:hover .person__photo
 			border: 2px solid $supared
+		+r(720)
+			display: flex
+			flex-direction: column
+			justify-content: center
+			-webkit-align-items: center
+			align-items: center
 	&__full-info
-		clear: both
 		padding: 0 10px
-	&__photo
 	&__photo
 		width: 200px
 		height: 250px
@@ -26,8 +30,11 @@
 		overflow: hidden
 		&:hover .person__name-link
 			text-decoration: underline
-	&__image
-
+		+r(720)
+			float: none
+	&__whois
+		+r(720)
+			text-align: center
 	&__info
 		font-size: 16px
 		line-height: 16px

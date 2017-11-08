@@ -1,24 +1,28 @@
+$hero-height: 700px
+$hero-height1000px: 500px
+$hero-height720px: 450px
+$hero-height320px: auto
+$dark: #232528
+
 .hero
 	width: 100%
-	height: 700px
+	height: $hero-height
 	background-color: #eee
 	+r(1000)
-		height: 100%
-	+r(480)
-		display: none
+		height: $hero-height1000px
+	+r(720)
+		height: $hero-height720px
 	&__container
 		position: relative
 
-// $nav-colors: $supared, #5a3972, #6a9b4d, #eda240, #4460a3, $supared
-// @for $i from 1 through length($nav-colors)
-//  li.nav__item:nth-child(#length($nav-colors)n+#$i)
-//    background: nth($nav-colors, $i)
 .nav
 	z-index: 999
 	width: 100%
 	position: absolute
 	top: 35px
 	transition: all 600ms ease
+	+r(720)
+		display: none
 	&__container
 		transition: all 400ms cubic-bezier(1, -0.515, 0.335, 1.225)
 		max-width: 840px
@@ -71,6 +75,8 @@
 	width: 100%
 	position: fixed
 	top: 0
+	+r(720)
+		display: none
 	&__container
 		box-shadow: 0 0 10px rgba(0,0,0,.6)
 		border-top: 2px solid $supared
@@ -122,22 +128,74 @@
 
 .carousel
 	position: relative
-	height: 700px
+	height: $hero-height
 	width: 100%
 	cursor: pointer
-	+r(1000)
-		height: auto
+	+r(720)
+		height: $hero-height720px
 	&__container
-		margin: 0 auto
-		max-width: 1920px
+		margin: 0
 		width: 100%
 	&__item
 		z-index: -1
 	&__img
+		margin: auto
+		+r(720)
+			filter: blur(2px)
+			// transform: scale(1.05)
+
+.carousel-content
+	position: absolute
+	z-index: 2
+	width: 100%
+	display: none
+	+r(720)
+		display: flex
+		flex-direction: column
+		align-content: space-around
+		justify-content: space-around
+		align-items: center
+		height: $hero-height720px
+	&__logo
+		display: flex
+		-webkit-justify-content: space-around
+	&__logo1
+		background-image: url(../img/logo/logo1.png)
+		width: 100px
+		height: 100px
+		border-radius: 100px
+		overflow: hidden
+		margin: 20px
+	&__logo2
+		background-image: url(../img/logo/logo2.png)
+		width: 100px
+		height: 100px
+		border-radius: 100px
+		overflow: hidden
+		margin: 20px
+	&__title
+		z-index: 2
 		width: 100%
-		height: 700px
-		+r(1000)
-			height: auto
+		text-align: center
+		vertical-align: center
+		font-size: 28px
+		font-weight: 600
+		font-weight: bold
+		padding: 10px
+		display: none
+		text-shadow: 3px 3px 1px #000000
+		+r(720)
+			display: block
+	&__title-link
+		color: white
+		text-decoration: none
+		+r(320)
+			font-size: 24px
+	&__title-span
+		color: $supared
+		font-size: 28px
+		+r(320)
+			font-size: 24px
 
 .arrow
 	position: absolute
@@ -152,8 +210,6 @@
 	bottom: 0
 	background: rgba(288, 288, 288, 0)
 	transition: all .5s ease
-	+r(1000)
-		display: none
 	&:hover
 		color: $supared
 		text-shadow: #000 1px 1px 5px
@@ -184,3 +240,8 @@
 
 
 
+
+// $nav-colors: $supared, #5a3972, #6a9b4d, #eda240, #4460a3, $supared
+// @for $i from 1 through length($nav-colors)
+//  li.nav__item:nth-child(#length($nav-colors)n+#$i)
+//    background: nth($nav-colors, $i)

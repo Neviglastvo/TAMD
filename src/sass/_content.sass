@@ -5,7 +5,8 @@
   &__container
     box-shadow: 0 0 10px rgba(0,0,0,.9)
     position: relative
-    width: 1000px
+    width: 100%
+    max-width: 1000px
     min-height: 500px
     margin: 0 auto
     margin-top: -300px
@@ -20,7 +21,8 @@
   &__container-main
     box-shadow: 0 0 10px rgba(0,0,0,.9)
     position: relative
-    width: 1000px
+    width: 100%
+    max-width: 1000px
     margin: 0 auto
     margin-top: -100px
     display: flex
@@ -28,7 +30,7 @@
     background: #eee
     +r(1000)
       width: 100%
-    +r(480)
+      top: 0
       margin-top: 0
   &__center
     width: 100%
@@ -49,3 +51,5 @@
   &__name
     font-size: 22px
     margin-bottom: 10px
+    +r(720)
+      text-align: center
