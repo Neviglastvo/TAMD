@@ -33,22 +33,32 @@
 	<!-- end header -->
 
 
-		<!-- begin hamburger -->
-		<button class="hamburger hamburger--emphatic" type="button">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</button>
-		<div class="toggle">
-			<div class="logo__wrapper">
-				<div class="logo">
-					<a href="#" class="logo__link">dsa<span class="logo__span">dsa</span></a>
-				</div>
-			</div>
-			<div class="toggle__wrapper">
-				<ul class="toggle__list">
-					<li class="toggle__item"><a href="#" class="toggle__link">qwe</a></li>
-				</ul>
-			</div>
+	<!-- begin hamburger -->
+	<button class="hamburger hamburger--emphatic" type="button">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+	<div class="toggle">
+
+		<div class="toggle__container">
+
+
+			<ul class="toggle__list">
+				{% if langUA %}
+				<a href="{{pagelink}}.html" class="lang lang__to-en"></a>
+				{% for i in arrs.navigationUA %}
+				<li class="toggle__item"><a href="{{i.link}}.html" class="toggle__link">{{i.title}}</a></li>
+				{% endfor %}
+				{% elif langEN  %}
+				<a href="{{pagelink}}.html" class="lang lang__to-ua"></a>
+				{% for i in arrs.navigationEN %}
+				<li class="toggle__item"><a href="{{i.link}}.html" class="toggle__link">{{i.title}}</a></li>
+				{% endfor %}
+				{% endif %}
+			</ul>
+
 		</div>
+
+	</div>
 		<!-- end hamburger -->
