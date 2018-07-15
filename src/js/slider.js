@@ -11,11 +11,13 @@ $('.js-slider').slick({
   pauseOnHover: true,
   prevArrow:"<button type='button' class='arrow arrow__prev'><i class='fa fa-angle-left' aria-hidden='true'></i><</button>",
   nextArrow:"<button type='button' class='arrow arrow__next'><i class='fa fa-angle-right' aria-hidden='true'></i>></button>",
+  rows: 0,
   responsive: [
     {
       breakpoint: 720,
       settings: {
-        arrows: false
+        arrows: false,
+        dots: false
       }
     }
   ]

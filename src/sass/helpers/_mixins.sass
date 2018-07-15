@@ -3,11 +3,27 @@ $suparedbg: rgba(140,54,63,0.1)
 $dim-supared: rgba(140,54,63,0.1)
 $nav-colors: $supared, #5a3972, #6a9b4d, #eda240, #4460a3, $supared
 
+=scale($var)
+	transform: scale($var)
+
+=tr
+	transition: all 300ms
+
+=trs($ms)
+  transition: all $ms+ms
+
+=r($width)
+	@media only screen and (max-width: $width+ "px")
+		@content
+
+=h
+	&:hover
+		@content
 
 // width
 =r($width)
-  @media only screen and (max-width: $width+ "px")
-    @content
+	@media only screen and (max-width: $width+ "px")
+		@content
 
 =rmin($width)
   @media only screen and (min-width: $width+ "px")

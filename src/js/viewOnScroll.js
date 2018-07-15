@@ -1,6 +1,3 @@
-var $ = require('jquery');
-
-
 // the callback function that will be fired
 // when the element apears in the viewport
 // because it fires on initialization

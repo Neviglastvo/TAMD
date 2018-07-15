@@ -3,20 +3,22 @@
 	<div class="infobar">
 		<div class="infobar__container">
 			{% if langUA %}
-			<div class="infobar__item">+38 044 259 03 07</div>
-			<div class="infobar__item"><a href="dtm@univ.kiev.ua" class="infobar__email">dtm@univ.kiev.ua</a></div>
-			<div class="infobar__item">пр. Глушкова, 4е</div>
+			<div class="infobar__item"><a href="tel:+380442590307" class="infobar__link">+38 044 259 03 07</a></div>
+			<div class="infobar__item"><a href="dtm@univ.kiev.ua" class="infobar__link">dtm@univ.kiev.ua</a></div>
+			<div class="infobar__item"><a href="/ua/about#google-map" class="infobar__link">пр. Глушкова, 4е</a></div>
 			<a href="{{pagelink}}.html" class="lang lang__to-en"></a>
 			{% elif langEN  %}
-			<div class="infobar__item">+38 044 259 03 07</div>
-			<div class="infobar__item"><a href="dtm@univ.kiev.ua" class="infobar__email">dtm@univ.kiev.ua</a></div>
-			<div class="infobar__item">пр. Глушкова, 4е</div>
+			<div class="infobar__item"><a href="tel:+380442590307" class="infobar__link">+38 044 259 03 07</a></div>
+			<div class="infobar__item"><a href="dtm@univ.kiev.ua" class="infobar__link">dtm@univ.kiev.ua</a></div>
+			<div class="infobar__item"><a href="/ua/about#google-map" class="infobar__link">pr. Glushkova, 4е</a></div>
 			<a href="{{pagelink}}.html" class="lang lang__to-ua"></a>
 			{% endif %}
 		</div>
 	</div>
 	<div class="header__container">
-		<a href="http://www.univ.kiev.ua" class="logo__link"><div class="logo logo__left"><img src="../img/logo/logo1.png" alt="" class="logo_image"></div></a>
+		<a href="http://www.univ.kiev.ua" class="logo logo__left logo__link">
+			<img src="../img/logo/logo1.png" alt="" class="logo__image">
+		</a>
 		<div class="header__title">
 			<div class="header__text">
 				<a href="main.html" class="header__title-link">{{siteTitle}}<br>
@@ -27,7 +29,10 @@
 					{% endif %}
 				</div>
 			</div>
-			<a href="main.html" class="logo__link logo__link-right"><div class="logo logo__left"><img src="../img/logo/logo2.png" alt="" class="logo_image"></div></a>
+			<!-- 	<a href="main.html" class="logo__link logo__link-right"><div class="logo logo__left"><img src="../img/logo/logo2.png" alt="" class="logo__image"></div></a> -->
+			<a href="main.html" class="logo logo__right logo__link">
+				<img src="../img/logo/logo2.png" alt="" class="logo__image">
+			</a>
 		</div>
 	</div>
 	<!-- end header -->

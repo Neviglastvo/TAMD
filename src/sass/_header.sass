@@ -1,27 +1,26 @@
 .header
 	background-color: #eee
 	width: 100%
-	max-height: 145px
-	height: 100%
 	border-top: 5px solid $supared
+	+r(1000)
+		padding: 0 20px
 	+r(720)
 		display: none
 	&__container
 		display: flex
 		justify-content: space-between
+		align-items: center
 		width: 100%
 		max-width: 1000px
-		margin: auto
-		padding: 5px 10px
-		align-items: center
+		margin: 0 auto
 	&__title
 		min-width: 265px
 		text-align: center
 		font-size: 16px
 		font-weight: bold
 		color: black
-		margin: auto
-		padding: 0 5px
+		margin: 0 auto
+		padding: 0 10px
 		+r(720)
 			display: none
 	&__title-link
@@ -36,50 +35,45 @@
 			font-size: 24spx
 
 .logo
-	margin: auto
-	width: 100%
-	height: 100%
-	max-width: 100px
-	max-height: 100px
+	margin: 5px 0
 	align-items: center
+	border-radius: 50%
+	overflow: hidden
 	+r(720)
 		display: none
-	&__image
-		width: 100%
-		height: 100%
-		max-width: 100px
-		max-height: 100px
+	&__left
 	&__link
-		width: 100%
-		height: 100%
-		max-width: 100px
+		display: flex
+		width: 100px
+		height: auto
 		max-height: 100px
-		border-radius: 100px
-		overflow: hidden
-		transition: all 600ms
+		+trs(500)
 		&:hover
 			box-shadow: 0 0 10px $supared
-			transition: all 600ms
-	&__link-right
+			+trs(500)
+	&__right
 		&:hover
 			box-shadow: 0 0 10px grey
+	&__image
+		width: 100%
+		height: auto
 
 .infobar
 	width: 100%
 	border-bottom: 1px solid darkgray
 	&__container
 		max-width: 1000px
-		margin: auto
+		margin: 0 auto
 		display: flex
 		justify-content: space-around
 		height: 25px
 	&__item
 		width: 33%
 		text-align: center
-		margin: auto
+		margin: 0 auto
 		font-size: 16px
 		font-weight: 600
-	&__email
+	&__link
 		text-decoration: none
 		color: black
 		&:hover
